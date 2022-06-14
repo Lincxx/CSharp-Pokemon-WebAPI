@@ -9,5 +9,8 @@
         //ICollection is a list that is immutable and less function
         // 1 to many
         public ICollection<Review> Reviews { get; set; }
+        // many to many
+        public ICollection<PokemonOwner> PokemonOwners { get; set; }
+        public ICollection<PokemonCategory> PokemonCategories { get; set; }
     }
 }
